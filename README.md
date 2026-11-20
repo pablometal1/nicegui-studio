@@ -9,6 +9,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-TypeScript-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 *Diseñá interfaces web y de escritorio en Python arrastrando y soltando controles, conectalos a bases de datos SQL en segundos, editá tu lógica con autocompletado real de NiceGUI y empaquetá tu aplicación lista para distribuir.*
 
@@ -161,3 +162,15 @@ cd backend
 ## 📖 Documentación
 
 Consultá la guía completa paso a paso en [**docs/GUIA_USUARIO.md**](docs/GUIA_USUARIO.md) o directamente dentro de la pestaña **Documentación** integrada en el IDE.
+
+---
+
+## 🔒 Seguridad y Uso Local
+
+> **Importante:** **NiceGUI Studio** está diseñado como un entorno de desarrollo **local** (`127.0.0.1`). Dado que incluye terminal integrada, gestión de paquetes `pip` y ejecución de subprocesos Python, **no debe exponerse directamente a internet** sin una capa de autenticación y aislamiento adecuada.
+
+---
+
+## 📄 Licencia
+
+Distribuido bajo la licencia **MIT**. Consultá el archivo [LICENSE](LICENSE) para más detalles.
