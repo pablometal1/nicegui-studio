@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nicegui-studio"
+version = "1.0.0"
+description = "IDE visual para Python con diseñador drag-and-drop para NiceGUI, Editor Visual de BD SQLite y Generador RAD CRUD."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.9.0",
+    "nicegui>=2.0.0",
+    "sqlalchemy>=2.0.0",
+]
+
+[project.scripts]
+nicegui-studio = "launcher:main"
+
+[tool.setuptools]
+py-modules = ["launcher"]
+packages = ["app", "app.models", "app.routers", "app.services"]
+package-dir = { "app" = "backend/app" }
