@@ -83,7 +83,7 @@ export const TopToolbar: React.FC<TopToolbarProps> = ({
           <div className="w-6 h-6 rounded bg-[#007acc] flex items-center justify-center">
             <Code2 className="w-4 h-4 text-white" />
           </div>
-          <span>NiceGUI Studio</span>
+          <span>Quantum-RAD Studio</span>
           <span className="text-[10px] font-mono bg-[#007acc]/25 text-[#4fc1ff] px-1.5 py-0.5 rounded">
             v1
           </span>
@@ -144,7 +144,7 @@ export const TopToolbar: React.FC<TopToolbarProps> = ({
         <button
           onClick={openDocs}
           className="flex items-center gap-1 px-2 py-1 text-xs rounded hover:bg-[#3e3e42] text-[#cccccc]"
-          title="Abrir Documentación de NiceGUI Studio y enlaces a todos los widgets"
+          title="Abrir Documentación de Quantum-RAD Studio y enlaces a todos los widgets"
         >
           <BookOpen className="w-3.5 h-3.5 text-[#4fc1ff]" />
           <span className="hidden 2xl:inline">Docs</span>

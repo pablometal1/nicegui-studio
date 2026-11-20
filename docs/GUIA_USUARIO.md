@@ -1,6 +1,6 @@
-# Guía de Usuario — NiceGUI Studio
+# Guía de Usuario — Quantum-RAD Studio
 
-**NiceGUI Studio** es un IDE visual para Python al estilo **Visual Studio** diseñado para crear aplicaciones web y de escritorio con **NiceGUI**, combinando un diseñador drag-and-drop, editor de código Monaco, editor visual de bases de datos SQLite/SQLAlchemy, generador RAD de CRUDs y Binding reactivo.
+**Quantum-RAD Studio** es un IDE visual para Python al estilo **Visual Studio** diseñado para crear aplicaciones web y de escritorio con **NiceGUI**, combinando un diseñador drag-and-drop, editor de código Monaco, editor visual de bases de datos SQLite/SQLAlchemy, generador RAD de CRUDs y Binding reactivo.
 
 ---
 

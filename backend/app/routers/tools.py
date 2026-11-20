@@ -358,7 +358,7 @@ def build_project_exe(req: BuildPackageRequest) -> dict[str, object]:
             needed.append("pywebview")
 
     if needed:
-        logs.append(f"[NiceGUI Studio] Instalando dependencias de empaquetado: {', '.join(needed)}...")
+        logs.append(f"[Quantum-RAD Studio] Instalando dependencias de empaquetado: {', '.join(needed)}...")
         inst = subprocess.run(
             [sys.executable, "-m", "pip", "install", *needed],
             capture_output=True,
@@ -405,7 +405,7 @@ def build_project_exe(req: BuildPackageRequest) -> dict[str, object]:
 
     cmd.append(str(entry_file))
 
-    logs.append(f"[NiceGUI Studio] Ejecutando: {' '.join(cmd)}")
+    logs.append(f"[Quantum-RAD Studio] Ejecutando: {' '.join(cmd)}")
     proc = subprocess.run(
         cmd,
         cwd=str(pdir),

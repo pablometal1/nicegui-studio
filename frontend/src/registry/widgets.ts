@@ -940,7 +940,7 @@ export const WIDGET_REGISTRY: WidgetDefinition[] = [
     icon: 'FileJson',
     isContainer: false,
     namePrefix: 'jed',
-    defaultProps: { content: { nombre: 'NiceGUI Studio', version: 1, activo: true } },
+    defaultProps: { content: { nombre: 'Quantum-RAD Studio', version: 1, activo: true } },
     defaultClasses: 'w-full',
     propSchemas: [{ key: 'content', label: 'Contenido JSON', type: 'json' }],
     events: [{ key: 'on_change', label: 'Al cambiar (on_change)', defaultSuffix: 'change' }],

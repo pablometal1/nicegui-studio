@@ -86,7 +86,7 @@ export const DocsPane: React.FC = () => {
           </div>
           <div>
             <h1 className="text-sm font-semibold text-white">
-              Manual Completo de NiceGUI Studio
+              Manual Completo de Quantum-RAD Studio
             </h1>
             <p className="text-[11px] text-[#9c9c9c]">
               Guía detallada paso a paso de cada herramienta del IDE y enlaces oficiales a los {WIDGET_REGISTRY.length} widgets
@@ -162,7 +162,7 @@ export const DocsPane: React.FC = () => {
                   1. Arquitectura Code-Behind (al estilo Visual Studio)
                 </h2>
                 <p className="text-xs text-[#cccccc] leading-relaxed">
-                  NiceGUI Studio separa el <strong>diseño visual</strong> de tu <strong>lógica en Python</strong> para que puedas modificar la interfaz arrastrando controles en cualquier momento sin perder nunca el código que escribiste. Cada formulario dentro de <code className="text-[#4fc1ff]">forms/</code> consta de 3 archivos:
+                  Quantum-RAD Studio separa el <strong>diseño visual</strong> de tu <strong>lógica en Python</strong> para que puedas modificar la interfaz arrastrando controles en cualquier momento sin perder nunca el código que escribiste. Cada formulario dentro de <code className="text-[#4fc1ff]">forms/</code> consta de 3 archivos:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 text-xs">
                   <div className="p-3 rounded bg-[#1e1e1e] border border-[#3e3e42] space-y-1">

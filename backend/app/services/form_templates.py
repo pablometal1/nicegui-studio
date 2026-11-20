@@ -772,7 +772,7 @@ def build_form_from_template(
                         props={"elevated": False, "bordered": True},
                         classes="items-center justify-between px-4 py-1 text-xs",
                         children=[
-                            WidgetNode(id="sh_ftr_l", type="label", name="lbl_copy", props={"text": "Creado con NiceGUI Studio"}, classes="text-xs text-white"),
+                            WidgetNode(id="sh_ftr_l", type="label", name="lbl_copy", props={"text": "Creado con Quantum-RAD Studio"}, classes="text-xs text-white"),
                         ],
                     ),
                 ],

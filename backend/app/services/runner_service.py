@@ -121,7 +121,7 @@ class RunnerService:
             {
                 "type": "log",
                 "stream": "system",
-                "text": f"[NiceGUI Studio] Starting {project_name}/{rel_entry}{mode_tag} -> http://127.0.0.1:{port}{route_display} ...",
+                "text": f"[Quantum-RAD Studio] Starting {project_name}/{rel_entry}{mode_tag} -> http://127.0.0.1:{port}{route_display} ...",
             }
         )
 
@@ -159,7 +159,7 @@ class RunnerService:
                 {
                     "type": "log",
                     "stream": "system",
-                    "text": f"[NiceGUI Studio] Process exited with code {code}.",
+                    "text": f"[Quantum-RAD Studio] Process exited with code {code}.",
                 }
             )
             self._emit_sync({"type": "status", "status": self.status().model_dump()})
@@ -179,7 +179,7 @@ class RunnerService:
             {
                 "type": "log",
                 "stream": "system",
-                "text": "[NiceGUI Studio] Hot Reload ⚡ reiniciando aplicación con los últimos cambios...",
+                "text": "[Quantum-RAD Studio] Hot Reload ⚡ reiniciando aplicación con los últimos cambios...",
             }
         )
         return await self.start(
@@ -196,7 +196,7 @@ class RunnerService:
         self._process = None
         if proc is not None and proc.poll() is None:
             self._emit_sync(
-                {"type": "log", "stream": "system", "text": "[NiceGUI Studio] Stopping process..."}
+                {"type": "log", "stream": "system", "text": "[Quantum-RAD Studio] Stopping process..."}
             )
             pid = proc.pid
             if os.name == "nt":

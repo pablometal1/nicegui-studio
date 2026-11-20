@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantum-RAD Studio — Visual Python IDE powered by NiceGUI</title>
+  <meta name="description" content="Diseñá aplicaciones web y de escritorio en Python con NiceGUI 4.0 arrastrando y soltando controles, patrón Code-Behind, diseñador SQL visual, Hot Reload y empaquetador .exe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+            <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+            <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+            <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+          </svg>
+        </span>
+        <span class="brand-name">Quantum-RAD <span class="brand-accent">Studio</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#caracteristicas">Características</a>
+        <a href="#code-behind">Code-Behind</a>
+        <a href="#instalacion">Instalación</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/pablometal1/nicegui-studio" target="_blank" rel="noreferrer" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.39-5.26 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="#instalacion" class="btn btn-primary">Comenzar Gratis</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="pill-badge">
+            <span class="pill-dot"></span>
+            <span>Open Source (MIT) • Python 3.11+ &amp; NiceGUI 4.0</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="gradient-text">Quantum-RAD Studio</span><br />
+            Visual Python IDE powered by NiceGUI.
+          </h1>
+
+          <p class="hero-subtitle">
+            Arrastrá y soltá <strong>76 widgets de NiceGUI 4.0</strong>, diseñá bases de datos SQL visualmente,
+            generá formularios CRUD en 1 clic, editá tu lógica con <strong>patrón Code-Behind</strong> y empaquetá tu
+            aplicación en <code>.exe</code> sin salir del IDE.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#instalacion" class="btn btn-primary btn-lg">
+              <span>Instalar Quantum-RAD Studio</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="https://github.com/pablometal1/nicegui-studio" target="_blank" rel="noreferrer" class="btn btn-outline btn-lg">
+              <span>Ver repositorio en GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive IDE Mockup -->
+        <div class="ide-window" aria-label="Vista previa interactiva de Quantum-RAD Studio">
+          <div class="ide-titlebar">
+            <div class="ide-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="ide-title">Quantum-RAD Studio — demo_app / forms/clientes.ngui.json</div>
+            <div class="ide-toolbar-pills">
+              <span class="ide-chip chip-hot">⚡ Hot Reload ON</span>
+              <span class="ide-chip chip-run">▶ Ejecutar (F5)</span>
+            </div>
+          </div>
+
+          <div class="ide-body">
+            <!-- Left Sidebar -->
+            <aside class="ide-sidebar">
+              <div class="ide-pane-title">EXPLORADOR</div>
+              <ul class="ide-tree">
+                <li class="tree-folder">📁 demo_app</li>
+                <li class="tree-item indent">📄 main.py</li>
+                <li class="tree-folder indent">📁 forms</li>
+                <li class="tree-item indent-2 active">🎨 clientes.ngui.json</li>
+                <li class="tree-item indent-2">🐍 clientes.py</li>
+                <li class="tree-item indent-2 muted">⚙️ clientes_designer.py</li>
+                <li class="tree-folder indent">📁 data</li>
+                <li class="tree-item indent-2">🗄️ app.db</li>
+              </ul>
+
+              <div class="ide-pane-title" style="margin-top: 16px;">CAJA DE CONTROLES (76)</div>
+              <div class="toolbox-mini">
+                <span>Card</span>
+                <span>Button</span>
+                <span>Input</span>
+                <span>AG Grid</span>
+                <span>EChart</span>
+                <span>Dialog</span>
+                <span>Select</span>
+                <span>Leaflet</span>
+              </div>
+            </aside>
+
+            <!-- Center Workspace -->
+            <div class="ide-center">
+              <div class="ide-tabs" role="tablist">
+                <button type="button" class="ide-tab active" data-mock-tab="designer">🎨 Diseñador Visual</button>
+                <button type="button" class="ide-tab" data-mock-tab="code">🐍 clientes.py (Monaco)</button>
+                <button type="button" class="ide-tab" data-mock-tab="db">🗄️ Diseñador SQL</button>
+              </div>
+
+              <!-- Mock Tab 1: Visual Designer -->
+              <div class="mock-pane active" id="mock-designer">
+                <div class="mock-canvas" id="mockCanvas">
+                  <div class="mock-card">
+                    <div class="mock-card-head">
+                      <div>
+                        <div class="mock-card-title">Gestión de Clientes</div>
+                        <div class="mock-card-sub">Ruta @ui.page('/clientes') • Conectado a data/app.db</div>
+                      </div>
+                      <button type="button" class="mock-ui-btn" id="mockPreviewBtn">+ Nuevo Cliente</button>
+                    </div>
+                    <div class="mock-grid-2">
+                      <div class="mock-input">
+                        <span>Nombre completo</span>
+                        <strong>María González</strong>
+                      </div>
+                      <div class="mock-input">
+                        <span>Correo electrónico</span>
+                        <strong>maria@empresa.com</strong>
+                      </div>
+                    </div>
+                    <div class="mock-table">
+                      <div class="mock-tr head">
+                        <span>ID</span><span>Nombre</span><span>Plan</span><span>Estado</span>
+                      </div>
+                      <div class="mock-tr">
+                        <span>#101</span><span>María González</span><span>Enterprise</span><span class="tag-ok">Activo</span>
+                      </div>
+                      <div class="mock-tr">
+                        <span>#102</span><span>Carlos Ruiz</span><span>Pro</span><span class="tag-ok">Activo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mock Tab 2: Code Editor -->
+              <div class="mock-pane" id="mock-code">
+<pre class="mock-code-pre"><code><span class="kw">from</span> nicegui <span class="kw">import</span> ui
+<span class="kw">from</span> forms.clientes_designer <span class="kw">import</span> ClientesFormDesigner
+
+<span class="kw">class</span> <span class="cls">ClientesForm</span>(ClientesFormDesigner):
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        <span class="fn">super</span>().__init__()
+        self.<span class="fn">setup_ui</span>()
+
+    <span class="kw">def</span> <span class="fn">on_btn_nuevo_click</span>(self, e):
+        <span class="cmt"># Código protegido por AST: el diseñador nunca lo sobrescribe</span>
+        ui.<span class="fn">notify</span>(<span class="str">f"Guardando {self.input_nombre.value}..."</span>, type=<span class="str">"positive"</span>)
+        self.<span class="fn">load_data</span>()</code></pre>
+              </div>
+
+              <!-- Mock Tab 3: DB Designer -->
+              <div class="mock-pane" id="mock-db">
+                <div class="mock-db-grid">
+                  <div class="mock-db-table">
+                    <div class="mock-db-head">🗄️ clientes (SQLite)</div>
+                    <div class="mock-db-row"><span>🔑 id</span><code>INTEGER PK</code></div>
+                    <div class="mock-db-row"><span>nombre</span><code>TEXT NOT NULL</code></div>
+                    <div class="mock-db-row"><span>email</span><code>TEXT UNIQUE</code></div>
+                    <div class="mock-db-row"><span>activo</span><code>BOOLEAN</code></div>
+                  </div>
+                  <div class="mock-db-table">
+                    <div class="mock-db-head">🗄️ pedidos (SQLite)</div>
+                    <div class="mock-db-row"><span>🔑 id</span><code>INTEGER PK</code></div>
+                    <div class="mock-db-row"><span>🔗 cliente_id</span><code>FK → clientes.id</code></div>
+                    <div class="mock-db-row"><span>total</span><code>REAL</code></div>
+                    <div class="mock-db-row"><span>fecha</span><code>TEXT</code></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Inspector -->
+            <aside class="ide-inspector">
+              <div class="ide-pane-title">PROPIEDADES — self.btn_nuevo</div>
+              <div class="insp-group">
+                <label>Texto</label>
+                <div class="insp-input">+ Nuevo Cliente</div>
+              </div>
+              <div class="insp-group">
+                <label>Color del botón (Paleta Tailwind)</label>
+                <div class="swatch-row" id="heroColorPicker">
+                  <button type="button" class="swatch active" data-color="#2563eb" style="background:#2563eb" title="blue-600"></button>
+                  <button type="button" class="swatch" data-color="#059669" style="background:#059669" title="emerald-600"></button>
+                  <button type="button" class="swatch" data-color="#7c3aed" style="background:#7c3aed" title="violet-600"></button>
+                  <button type="button" class="swatch" data-color="#e11d48" style="background:#e11d48" title="rose-600"></button>
+                  <button type="button" class="swatch" data-color="#ea580c" style="background:#ea580c" title="orange-600"></button>
+                  <button type="button" class="swatch" data-color="#0ea5e9" style="background:#0ea5e9" title="sky-500"></button>
+                </div>
+              </div>
+              <div class="insp-group">
+                <label>Props Quasar (+150)</label>
+                <div class="quasar-tags">
+                  <span class="q-tag on">unelevated</span>
+                  <span class="q-tag on">no-caps</span>
+                  <span class="q-tag">rounded</span>
+                  <span class="q-tag">glossy</span>
+                </div>
+              </div>
+              <div class="insp-group">
+                <label>Evento on_click</label>
+                <div class="insp-event">⚡ on_btn_nuevo_click</div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-num">76</div>
+          <div class="stat-label">Widgets de NiceGUI 4.0</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">150+</div>
+          <div class="stat-label">Props visuales de Quasar</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">242</div>
+          <div class="stat-label">Tonos oficiales Tailwind</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Código Python estándar</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="caracteristicas" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">TODO EN UN SOLO ENTORNO</span>
+          <h2>Diseñado para construir apps Python reales en minutos</h2>
+          <p>Desde el diseño visual hasta la base de datos y el instalador final, sin perder control sobre tu código Python.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon icon-blue">🎨</div>
+            <h3>Diseñador Visual Drag &amp; Drop</h3>
+            <p>76 controles organizados en 5 categorías (Layout, Básicos, Entradas, Datos/Gráficos y Multimedia) con anidamiento preciso y 7 plantillas de arranque.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-emerald">🧩</div>
+            <h3>Patrón Code-Behind Seguro</h3>
+            <p>Inspirado en Visual Studio: separa el diseño (<code>_designer.py</code>) de tu lógica (<code>form.py</code>) e inyecta eventos con análisis AST sin sobrescribir tu código.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-violet">🗄️</div>
+            <h3>Base de Datos Visual &amp; CRUD RAD</h3>
+            <p>Creá bases SQLite, tablas, columnas y claves foráneas visualmente. Generá pantallas CRUD completas en 1 clic y vinculá tablas, gráficos y selects directo a tu DB.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-amber">🌈</div>
+            <h3>Color Picker + Tailwind + Quasar</h3>
+            <p>Selector de color libre más la paleta completa de Tailwind CSS, más de 150 props de Quasar en 7 secciones y selector visual de Material Icons.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-cyan">⚡</div>
+            <h3>Hot Reload &amp; Monaco IntelliSense</h3>
+            <p>Guardá con <code>Ctrl+S</code> y tu app se actualiza al instante en la Vista Previa integrada. Autocompletado vivo con métodos reales inspeccionados desde NiceGUI 4.0.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-rose">📦</div>
+            <h3>Empaquetador Integrado</h3>
+            <p>Distribuí los proyectos creados con Quantum-RAD Studio como archivo <code>.zip</code>, ejecutable <code>.exe</code> con PyInstaller o instalador de Windows con Inno Setup desde una ventana visual.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code-Behind Deep Dive -->
+    <section id="code-behind" class="section section-alt">
+      <div class="container split-layout">
+        <div class="split-text">
+          <span class="section-eyebrow">ARQUITECTURA LIMPIA</span>
+          <h2>Cero cajas negras. Código Python que da gusto leer.</h2>
+          <p>
+            A diferencia de herramientas no-code cerradas, <strong>Quantum-RAD Studio</strong> genera código Python limpio y
+            modular que podés versionar en Git, extender con cualquier librería de <code>pip</code> y desplegar donde quieras.
+          </p>
+          <ul class="check-list">
+            <li><strong>Doble clic en cualquier control</strong> para crear y saltar directo a su evento en Monaco.</li>
+            <li><strong>Reactive Bindings</strong> (<code>bind_value</code>, <code>bind_text</code>, <code>app.storage.user</code>) configurables visualmente.</li>
+            <li><strong>Top-level Page Layout</strong> automático para <code>header</code>, <code>footer</code> y <code>drawers</code>.</li>
+          </ul>
+        </div>
+
+        <div class="code-card">
+          <div class="code-card-tabs">
+            <button type="button" class="code-tab active" data-code-tab="logic">forms/clientes.py</button>
+            <button type="button" class="code-tab" data-code-tab="designer">forms/clientes_designer.py</button>
+            <button type="button" class="copy-btn" id="copyCodeBtn">Copiar</button>
+          </div>
+          <div class="code-card-body">
+<pre class="code-pane active" id="code-logic"><code><span class="kw">from</span> nicegui <span class="kw">import</span> ui
+<span class="kw">from</span> forms.clientes_designer <span class="kw">import</span> ClientesFormDesigner
+
+
+<span class="kw">class</span> <span class="cls">ClientesForm</span>(ClientesFormDesigner):
+    <span class="kw">def</span> <span class="fn">__init__</span>(self) -> <span class="cls">None</span>:
+        <span class="fn">super</span>().__init__()
+        self.<span class="fn">setup_ui</span>()
+
+    <span class="kw">def</span> <span class="fn">on_btn_guardar_click</span>(self, e) -> <span class="cls">None</span>:
+        nombre = self.input_nombre.value
+        <span class="kw">if not</span> nombre:
+            ui.<span class="fn">notify</span>(<span class="str">"Ingresá un nombre"</span>, type=<span class="str">"warning"</span>)
+            <span class="kw">return</span>
+        ui.<span class="fn">notify</span>(<span class="str">f"Cliente {nombre} guardado!"</span>, type=<span class="str">"positive"</span>)</code></pre>
+
+<pre class="code-pane" id="code-designer"><code><span class="cmt"># Auto-generated by Quantum-RAD Studio — do not edit manually</span>
+<span class="kw">from</span> nicegui <span class="kw">import</span> ui
+
+
+<span class="kw">class</span> <span class="cls">ClientesFormDesigner</span>:
+    <span class="kw">def</span> <span class="fn">setup_ui</span>(self) -> <span class="cls">None</span>:
+        ui.<span class="fn">query</span>(<span class="str">"body"</span>).<span class="fn">style</span>(<span class="str">"background: #0f172a;"</span>)
+        self.root = ui.<span class="fn">column</span>().<span class="fn">classes</span>(<span class="str">"w-full max-w-4xl mx-auto p-6 gap-4"</span>)
+        <span class="kw">with</span> self.root:
+            <span class="kw">with</span> ui.<span class="fn">card</span>().<span class="fn">classes</span>(<span class="str">"w-full p-6 gap-4"</span>):
+                self.input_nombre = ui.<span class="fn">input</span>(<span class="str">"Nombre"</span>).<span class="fn">props</span>(<span class="str">"outlined dense"</span>)
+                self.btn_guardar = ui.<span class="fn">button</span>(
+                    <span class="str">"Guardar"</span>,
+                    color=<span class="str">"#2563eb"</span>,
+                    on_click=self.on_btn_guardar_click,
+                ).<span class="fn">props</span>(<span class="str">"unelevated no-caps"</span>)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="instalacion" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">ARRANQUE EN 2 MINUTOS</span>
+          <h2>Instalación Rápida</h2>
+          <p>Requiere Python 3.11+ y Node.js 18+. Elegí instalación automática en Windows o arranque manual.</p>
+        </div>
+
+        <div class="install-box">
+          <div class="install-tabs">
+            <button type="button" class="install-tab active" data-install="win">🪟 Windows (Automático)</button>
+            <button type="button" class="install-tab" data-install="manual">💻 Manual (Multiplataforma)</button>
+          </div>
+
+          <div class="install-pane active" id="install-win">
+            <div class="cmd-block">
+<pre><code>git clone https://github.com/pablometal1/nicegui-studio.git
+cd nicegui-studio
+installer\install.bat
+installer\run_studio.bat</code></pre>
+              <button type="button" class="copy-btn small" data-copy-target="install-win">Copiar</button>
+            </div>
+            <p class="install-note">Configura el entorno virtual, instala dependencias, compila el frontend y abre Quantum-RAD Studio en <code>http://127.0.0.1:8010</code>.</p>
+          </div>
+
+          <div class="install-pane" id="install-manual">
+            <div class="cmd-block">
+<pre><code>git clone https://github.com/pablometal1/nicegui-studio.git
+cd nicegui-studio
+
+# 1. Backend Python
+cd backend && python -m venv .venv
+.\.venv\Scripts\activate && pip install -r requirements.txt
+
+# 2. Frontend React
+cd ..\frontend && npm install && npm run build
+
+# 3. Iniciar servidor unificado
+cd .. && .\backend\.venv\Scripts\python.exe launcher.py --port 8010</code></pre>
+              <button type="button" class="copy-btn small" data-copy-target="install-manual">Copiar</button>
+            </div>
+            <p class="install-note">Ideal para desarrollo local o entornos Linux/macOS (activando <code>source .venv/bin/activate</code>).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">PREGUNTAS FRECUENTES</span>
+          <h2>Todo lo que necesitás saber</h2>
+        </div>
+
+        <div class="faq-grid">
+          <details class="faq-item" open>
+            <summary>¿Puedo usar Quantum-RAD Studio para proyectos comerciales?</summary>
+            <p>Sí. Tanto Quantum-RAD Studio como NiceGUI utilizan licencia <strong>MIT</strong>, lo que te permite construir, empaquetar y vender tus aplicaciones libremente.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Qué pasa si edito manualmente el código Python de mi formulario?</summary>
+            <p>Tu lógica vive en <code>forms/&lt;nombre&gt;.py</code> y nunca es sobrescrita por el diseñador. Solo se regenera <code>forms/&lt;nombre&gt;_designer.py</code>.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Las aplicaciones creadas dependen de Quantum-RAD Studio para ejecutarse?</summary>
+            <p>No. Cada proyecto es una aplicación Python + NiceGUI 100% independiente que podés ejecutar con <code>python main.py</code>, en Docker o compilada como <code>.exe</code>.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Está pensado para uso local o en un servidor público?</summary>
+            <p>Quantum-RAD Studio es un IDE de desarrollo <strong>local</strong> (<code>127.0.0.1</code>). Las aplicaciones que construís con él sí pueden desplegarse en cualquier servidor web o escritorio.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-name">Quantum-RAD <span class="brand-accent">Studio</span></span>
+        </div>
+        <p class="footer-disclaimer">
+          Uruguay, Treinta y Tres, Santa Clara del Olimar 🇺🇾
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/pablometal1/nicegui-studio" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/pablometal1/nicegui-studio/blob/main/docs/GUIA_USUARIO.md" target="_blank" rel="noreferrer">Guía de Usuario</a>
+        <a href="https://github.com/pablometal1/nicegui-studio/blob/main/LICENSE" target="_blank" rel="noreferrer">Licencia MIT</a>
+        <a href="https://nicegui.io/documentation" target="_blank" rel="noreferrer">Docs NiceGUI</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

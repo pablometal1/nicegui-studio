@@ -1,7 +1,7 @@
 THIRD-PARTY SOFTWARE LICENSES
 =============================
 
-NiceGUI Studio makes use of the following open-source libraries. Each library
+Quantum-RAD Studio makes use of the following open-source libraries. Each library
 remains the property of its respective copyright holders and is subject to its
 own license terms:
 

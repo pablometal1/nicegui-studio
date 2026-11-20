@@ -71,7 +71,7 @@ def _create_default_main_form_doc() -> FormDocument:
         schemaVersion="1.0",
         formName="MainForm",
         settings=FormSettings(
-            title="NiceGUI Studio — Demo App",
+            title="Quantum-RAD Studio — Demo App",
             route="/",
             dark=False,
             rootClasses="w-full max-w-2xl mx-auto p-6 gap-4",
@@ -92,7 +92,7 @@ def _create_default_main_form_doc() -> FormDocument:
                             id="node_lbl_title",
                             type="label",
                             name="lbl_title",
-                            props={"text": "Bienvenido a NiceGUI Studio"},
+                            props={"text": "Bienvenido a Quantum-RAD Studio"},
                             classes="text-2xl font-bold text-slate-800",
                         ),
                         WidgetNode(
@@ -170,7 +170,7 @@ def _demo_code_behind() -> str:
         "    def on_btn_greet_click(self, e=None) -> None:\n"
         '        """Handler for on_click."""\n'
         '        name = (self.inp_name.value or "Mundo").strip()\n'
-        '        self.lbl_result.set_text(f"¡Hola, {name}! Generado con NiceGUI Studio.")\n'
+        '        self.lbl_result.set_text(f"¡Hola, {name}! Generado con Quantum-RAD Studio.")\n'
         '        ui.notify(f"¡Hola, {name}!", type="positive")\n\n'
         "    def on_btn_clear_click(self, e=None) -> None:\n"
         '        """Handler for on_click."""\n'

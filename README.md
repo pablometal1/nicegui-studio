@@ -1,8 +1,8 @@
 <div align="center">
 
-# NiceGUI Studio
+# Quantum-RAD Studio
 
-### IDE Visual estilo Visual Studio & Diseñador RAD para **NiceGUI 4.0** en Python
+### Visual Python IDE powered by **NiceGUI**
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![NiceGUI](https://img.shields.io/badge/NiceGUI-4.0-5898D4?style=for-the-badge&logo=python&logoColor=white)](https://nicegui.io/)
@@ -50,7 +50,7 @@ Cada formulario se divide en 3 archivos sincronizados de forma segura para que e
 ### ⚡ Ejecución, Hot Reload y Empaquetado Integrado
 - **Runner integrado con Hot Reload**: ejecutá tu proyecto (`F5`), visualizalo embebido en la pestaña *Vista Previa* con barra de rutas y recarga automática al guardar (`Ctrl+S`).
 - **Consola, Terminal y Gestor de Paquetes `pip`** integrados en el panel inferior.
-- **Empaquetador desde la app**: exportá tus proyectos creados con NiceGUI Studio a `.zip`, ejecutable `.exe` con **PyInstaller** o instalador de Windows con **Inno Setup**.
+- **Empaquetador desde la app**: exportá tus proyectos creados con Quantum-RAD Studio a `.zip`, ejecutable `.exe` con **PyInstaller** o instalador de Windows con **Inno Setup**.
 
 ---
 
@@ -80,7 +80,7 @@ Ejecutá el instalador incluido que configura el entorno virtual Python, instala
 installer\install.bat
 ```
 
-Luego abrí **NiceGUI Studio** con:
+Luego abrí **Quantum-RAD Studio** con:
 
 ```bat
 installer\run_studio.bat
@@ -167,7 +167,7 @@ Consultá la guía completa paso a paso en [**docs/GUIA_USUARIO.md**](docs/GUIA_
 
 ## 🔒 Seguridad y Uso Local
 
-> **Importante:** **NiceGUI Studio** está diseñado como un entorno de desarrollo **local** (`127.0.0.1`). Dado que incluye terminal integrada, gestión de paquetes `pip` y ejecución de subprocesos Python, **no debe exponerse directamente a internet** sin una capa de autenticación y aislamiento adecuada.
+> **Importante:** **Quantum-RAD Studio** está diseñado como un entorno de desarrollo **local** (`127.0.0.1`). Dado que incluye terminal integrada, gestión de paquetes `pip` y ejecución de subprocesos Python, **no debe exponerse directamente a internet** sin una capa de autenticación y aislamiento adecuada.
 
 ---
 
@@ -175,4 +175,4 @@ Consultá la guía completa paso a paso en [**docs/GUIA_USUARIO.md**](docs/GUIA_
 
 Distribuido bajo la licencia **MIT**. Consultá [LICENSE](LICENSE) y las licencias de librerías de terceros en [THIRD_PARTY_LICENSES.txt](THIRD_PARTY_LICENSES.txt).
 
-> **Aviso de marca:** *NiceGUI Studio* es un proyecto comunitario independiente y no está afiliado, respaldado ni patrocinado oficialmente por **Zauberzeug GmbH** ni por el equipo de **NiceGUI**. Todas las marcas y nombres de librerías pertenecen a sus respectivos propietarios.
+> **Aviso de marca:** *Quantum-RAD Studio* es un proyecto comunitario independiente y no está afiliado, respaldado ni patrocinado oficialmente por **Zauberzeug GmbH** ni por el equipo de **NiceGUI**. Todas las marcas y nombres de librerías pertenecen a sus respectivos propietarios.
