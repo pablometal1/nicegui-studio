@@ -171,6 +171,8 @@ Consultá la guía completa paso a paso en [**docs/GUIA_USUARIO.md**](docs/GUIA_
 
 ---
 
-## 📄 Licencia
+## 📄 Licencia y Avisos
 
-Distribuido bajo la licencia **MIT**. Consultá el archivo [LICENSE](LICENSE) para más detalles.
+Distribuido bajo la licencia **MIT**. Consultá [LICENSE](LICENSE) y las licencias de librerías de terceros en [THIRD_PARTY_LICENSES.txt](THIRD_PARTY_LICENSES.txt).
+
+> **Aviso de marca:** *NiceGUI Studio* es un proyecto comunitario independiente y no está afiliado, respaldado ni patrocinado oficialmente por **Zauberzeug GmbH** ni por el equipo de **NiceGUI**. Todas las marcas y nombres de librerías pertenecen a sus respectivos propietarios.

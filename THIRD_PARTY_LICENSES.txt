@@ -1,0 +1,46 @@
+THIRD-PARTY SOFTWARE LICENSES
+=============================
+
+NiceGUI Studio makes use of the following open-source libraries. Each library
+remains the property of its respective copyright holders and is subject to its
+own license terms:
+
+Backend (Python)
+----------------
+- NiceGUI (https://github.com/zauberzeug/nicegui)
+  Copyright (c) Zauberzeug GmbH — MIT License
+- FastAPI (https://github.com/fastapi/fastapi)
+  Copyright (c) Sebastián Ramírez — MIT License
+- Uvicorn (https://github.com/encode/uvicorn)
+  Copyright (c) Encode OSS Ltd. — BSD-3-Clause License
+- Pydantic (https://github.com/pydantic/pydantic)
+  Copyright (c) Pydantic Services Inc. — MIT License
+- SQLAlchemy (https://github.com/sqlalchemy/sqlalchemy)
+  Copyright (c) SQLAlchemy authors and contributors — MIT License
+
+Frontend (TypeScript / React)
+-----------------------------
+- React (https://github.com/facebook/react)
+  Copyright (c) Meta Platforms, Inc. — MIT License
+- Vite (https://github.com/vitejs/vite)
+  Copyright (c) Evan You & Vite Contributors — MIT License
+- Tailwind CSS (https://github.com/tailwindlabs/tailwindcss)
+  Copyright (c) Tailwind Labs, Inc. — MIT License
+- Monaco Editor (https://github.com/microsoft/monaco-editor)
+  Copyright (c) Microsoft Corporation — MIT License
+- @dnd-kit (https://github.com/clauderic/dnd-kit)
+  Copyright (c) Claudéric Demers — MIT License
+- Zustand (https://github.com/pmndrs/zustand)
+  Copyright (c) Paul Henschel — MIT License
+- Lucide Icons (https://github.com/lucide-icons/lucide)
+  Copyright (c) Lucide Contributors — ISC License
+
+UI & Optional Visualization Libraries Used via NiceGUI
+------------------------------------------------------
+- Quasar Framework — MIT License
+- AG Grid Community — MIT License
+- Apache ECharts — Apache-2.0 License
+- Plotly.js — MIT License
+- Leaflet — BSD-2-Clause License
+- Highcharts (optional widget) — Commercial license required for commercial use
+  (see https://shop.highcharts.com/ for details).
