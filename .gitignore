@@ -31,6 +31,7 @@ projects/*
 *.sqlite3
 .env
 .env.local
+ROADMAP.md
 
 # OS & Editor files
 .DS_Store
